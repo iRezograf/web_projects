@@ -1,0 +1,28 @@
+/* p {
+        font: 20px/24px bold italic large serif;
+      } */
+html {
+  background-color: #00539f;
+  
+}
+h1 {
+  margin: 0,0,0,0 ;
+  text-align: center;
+  font: 28px RussoOne-Regular;
+}
+h2 {
+  margin: 0,0,0,0;
+  text-align: right;
+  font: 20px Nunito;
+}
+
+body {
+  width: auto;
+  margin: 0 auto;
+  background-color: #c2c2c2;
+
+  padding: 0 200px 100px 200px;
+  border: 5px solid black;
+  text-align: justify;
+  font: 16px Nunito;
+}

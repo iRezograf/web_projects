@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>LearningCSS</title>
+   <script type="text/javascript"></script>
+   <link href="../styles/style.css" rel="stylesheet" />
+</head>
+<body>
+   
+   <h1>
+      Урок Введение в контроль версий (лекции)
+   </h1>
+   <script src="../scripts/main.js"></script>
+<h2>
+   *(Ильнар Шафигуллин)*
+</h2>
+ <p>
+   Использованые мною материалы:
+ </p>
+ <ol>
+   <li><a href="https://gb.ru/lessons/256996">Лекция Введение в контроль версий</a></li>
+   <li><a href="https://www.youtube.com/watch?v=g1k48cVIynw&t=61s">The same in youtube</a></li>
+   <li><a href="https://git-scm.com/book/ru/v2">Pro Git book" Scott Chacon and Ben Straub</a></li>
+   <li><a href="https://docs.github.com/en">Git Documentation</a></li>
+   <li><a href="https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git">Getting Started with Git</a></li>
+</ol>
+
+<p>
+   Доступ к странице со справочной информацией по любой Git-команде:
+<ul>
+   <li>
+      $ git help <команда>
+   </li>
+   <li>
+      $ git <команда> --help
+   </li>
+   <li>
+      $ man git-<команда>
+   </li>
+
+</ul>
+</p>
+
+<p>
+   1. проверяем установлен ли гит:  
+   <ul>
+      <li>git --version</li> <text> или</text>
+      <li>git status</li> <p> git   version 2.32.1 (Apple Git-133)</p>
+   </ul>
+</p>
+
+<p>
+   2. смотрим настройки::  
+   <ul>
+      <li>git config -l</li> 
+   </ul>
+</p>
+
+<p>
+   3. возможно придется проинициализировать некоторые параметры:
+  
+   <ul>
+      <li>$ git config --global user.name "Rafael Rezyapov"</li>
+      <li>$ git config --global user.email "Rezograf@gmail.com"</li> 
+   <li>git config -l </li>
+   <li>...</li>
+   <li>user.email=rezograf@gmail.com  </li>
+   <li>user.name=Rafael Rezyapov </li>
+   <li>...</li>
+   </ul>
+</p>
+  
+
+3. базовый набор сохранения изменений:
+- `git status`  
+- `git diff`
+- `git add Essey-Summary`
+- `git commit -m "comment about commit"`
+- отправить изменения на сервер  
+   `git push`
+- создать новую ветку  
+   `git branch NewBranch`  
+- сделать ее актуальной  
+   `git checkout NewBranch`
+8. коммитим
+   `git commit -m "New branch for new lesson"`  
+8. можно даже переименовать последний коммит  
+   `git commit --amend -m "Новое имя для последнего коммита"`
+9. можно создать локальный клон  
+`git clone https://github.com/iRezograf/GeekBrains`  
+он создасться в том же каталоге
+### _Урок 3. Углубляемся в контроль версий_
+
+##### _Цель: научиться работать с совместными проектами, с размещением репозитория на GitHube для обеспечения доступа коллег_
+
+>##### сделал commit - можешь себе позволить все,
+>##### сделал push - можешь позволить себе еще больше ...
+1. регистрация на GitHub.ru
+1. создание своего репозитория в GitHub
+   * создаем рабочий каталог
+      * `mkdir Lesson3`
+      * `mkfile Essey-Summary.md`
+   *  _памятка:_
+         > * ##### mkdir "dirname"  
+         > * ##### mkfile "filename"
+         > * ##### rm -d "dirname"
+         > * ##### rm "filename" 
+   * открываем его в VSCode 
+   * инициализируем git для этого каталога
+      * `git init`
+   * "привяываем свои "идентификаторы"
+      * `$ git config --global user.name "Rafael Rezyapov"`
+      * `$ git config --global user.email Rezograf@gmail.com` 
+   * готовим дальше
+   * `git status`
+      * `git add Essey-Summary.md` (или `git add .`)
+      * `git commit -m "Initialisation commit"` 
+2. твой первый пуш
+3. твой первый форк
+3. pull request
+
+ </p>
+</body>
+</html>
+
+Тренажер Emmet: https://epixx.github.io/emmet/
+Emmet команды: https://docs.emmet.io/cheat-sheet/
+
+https://open-vsx.org/extension/techer/open-in-browser
+https://open-vsx.org/extension/ritwickdey/LiveServer
+
+https://validator.w3.org/#validate_by_input
+
+https://disk.yandex.ru/d/Y7ZkabEUOUvOgg
