@@ -4,4 +4,5 @@ function startHw3_1(){
     alert(`Цельсий: ${temperaturebycelsius}, Фаренгейт: ${temperaturebyfahrenheit}`);
 }
 
+buttontask1.addEventListener('click', startHw3_1)
 
