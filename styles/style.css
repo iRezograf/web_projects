@@ -5,6 +5,9 @@ html {
   background-color: #00539f;
   
 }
+img {
+  width: 50px;
+}
 h1 {
   margin: 0,0,0,0 ;
   text-align: center;
@@ -19,10 +22,60 @@ h2 {
 body {
   width: auto;
   margin: 0 auto;
+  /* background-color: #c2c2c2; */
   background-color: #c2c2c2;
 
   padding: 0 200px 100px 200px;
   border: 5px solid black;
   text-align: justify;
   font: 16px Nunito;
+}
+.li-marker {
+  /* list-style-type: circle;
+  list-style-type: square;
+  list-style-type: disc; */
+  /* list-style-type: "->"; */
+  list-style-type: disc;
+
+}
+.quotation {
+  text-align: end;
+}
+
+code {
+  background: rgb(171, 176, 175);
+  padding: 0.125rem 0.25rem;
+  font-family: Nunito;
+    /* width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; */
+}
+
+ss {
+  background: rgb(218, 102, 7);
+  padding: 0.125rem 0.25rem;
+  font-family: Nunito;
+    /* width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; */
+}
+
+kbd {
+  font-size: 0.9em;
+  font-family: monospace;
+  word-break: keep-all;
+  text-shadow: white 0px 1px;
+  background: rgb(242, 242, 242);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+kbd-del {
+  font-size: 0.9em;
+  font-family: monospace;
+  word-break: keep-all;
+  text-shadow: white 0px 1px;
+  background: rgb(242, 242, 242);
+  padding: 1px 5px;
+  border-radius: 3px;
+  text-decoration: line-through;
 }

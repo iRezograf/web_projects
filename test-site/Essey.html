@@ -6,18 +6,13 @@
    <script type="text/javascript"></script>
    <link href="../styles/style.css" rel="stylesheet" />
 </head>
-<body>
-   
-   <h1>
-      Урок Введение в контроль версий (лекции)
-   </h1>
+<body>   
+   <h1>Урок Введение в контроль версий (лекции)</h1>
    <script src="../scripts/main.js"></script>
-<h2>
-   *(Ильнар Шафигуллин)*
-</h2>
- <p>
-   Использованые мною материалы:
- </p>
+<h2>(Ильнар Шафигуллин)<img src="https://gbcdn.mrgcdn.ru/uploads/avatar/3044837/attachment/thumb-1a656273acf98b2313d8ca65b0177235.jpeg" alt="аватарка Ильнара Шафигуллина"></h2>
+
+
+ <p>Использованые мною материалы:</p>
  <ol>
    <li><a href="https://gb.ru/lessons/256996">Лекция Введение в контроль версий</a></li>
    <li><a href="https://www.youtube.com/watch?v=g1k48cVIynw&t=61s">The same in youtube</a></li>
@@ -25,111 +20,100 @@
    <li><a href="https://docs.github.com/en">Git Documentation</a></li>
    <li><a href="https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git">Getting Started with Git</a></li>
 </ol>
-
-<p>
-   Доступ к странице со справочной информацией по любой Git-команде:
-<ul>
-   <li>
-      $ git help <команда>
+<p>Доступ к странице со справочной информацией по любой Git-команде:</p>
+<ul class="li-marker"> 
+   <li>$ git help <команда>
    </li>
-   <li>
-      $ git <команда> --help
+   <li>$ git <команда> --help
    </li>
-   <li>
-      $ man git-<команда>
+   <li>$ man git-<команда>
    </li>
-
 </ul>
-</p>
+<!-- </ol> -->
+<p>Далее:</p>
+   <li>проверяем установлен ли гит: 
+      <ul class="li-marker">
+         <li>git --version</li> <text> или</text>
+         <li>git status</li> <text> git   version 2.32.1 (Apple Git-133)</text>
+      </ul></li>
+   <li>смотрим настройки::  
+      <ul class="li-marker">
+         <li>git config -l</li> 
+      </ul></li>
+   <li>возможно придется проинициализировать некоторые параметры:  
+      <ul class="li-marker">
+         <li>$ git config --global user.name "Rafael Rezyapov"</li>
+         <li>$ git config --global user.email "Rezograf@gmail.com"</li> 
+      <li>git config -l </li>
+      <li>...</li>
+      <li>user.email=rezograf@gmail.com  </li>
+      <li>user.name=Rafael Rezyapov </li>
+      <li>...</li>
+      </ul></li>
+   <li>базовый набор сохранения изменений:
+      <ul class="li-marker">
+         <li>`git status`</li>
+         <li>`git diff`</li>
+         <li>`git add Essey-Summary`</li>
+         <li>`git commit -m "comment about commit"`</li>
+         <li>`git push`-отправить изменения на сервер</li>
+         <li>`git branch NewBranch`-создать новую ветку</li>
+         <li>`git checkout NewBranch`-сделать ветку актуальной</li>
+         <li>`git commit -m "New branch for new lesson"`-коммитим</li>
+         <li>`git commit --amend -m "Новое имя для последнего коммита"`-можно даже переименовать последний коммит</li>
+         <li>`git clone https://github.com/iRezograf/GeekBrains`- создать локальный клон. Он создасться в том же каталоге</li>
+            </ul>  
+   </li>
+</ol>
 
-<p>
-   1. проверяем установлен ли гит:  
-   <ul>
-      <li>git --version</li> <text> или</text>
-      <li>git status</li> <p> git   version 2.32.1 (Apple Git-133)</p>
-   </ul>
-</p>
 
-<p>
-   2. смотрим настройки::  
-   <ul>
-      <li>git config -l</li> 
-   </ul>
-</p>
-
-<p>
-   3. возможно придется проинициализировать некоторые параметры:
-  
-   <ul>
-      <li>$ git config --global user.name "Rafael Rezyapov"</li>
-      <li>$ git config --global user.email "Rezograf@gmail.com"</li> 
-   <li>git config -l </li>
-   <li>...</li>
-   <li>user.email=rezograf@gmail.com  </li>
-   <li>user.name=Rafael Rezyapov </li>
-   <li>...</li>
-   </ul>
-</p>
-  
-
-3. базовый набор сохранения изменений:
-- `git status`  
-- `git diff`
-- `git add Essey-Summary`
-- `git commit -m "comment about commit"`
-- отправить изменения на сервер  
-   `git push`
-- создать новую ветку  
-   `git branch NewBranch`  
-- сделать ее актуальной  
-   `git checkout NewBranch`
-8. коммитим
-   `git commit -m "New branch for new lesson"`  
-8. можно даже переименовать последний коммит  
-   `git commit --amend -m "Новое имя для последнего коммита"`
-9. можно создать локальный клон  
-`git clone https://github.com/iRezograf/GeekBrains`  
-он создасться в том же каталоге
-### _Урок 3. Углубляемся в контроль версий_
-
-##### _Цель: научиться работать с совместными проектами, с размещением репозитория на GitHube для обеспечения доступа коллег_
-
->##### сделал commit - можешь себе позволить все,
->##### сделал push - можешь позволить себе еще больше ...
-1. регистрация на GitHub.ru
-1. создание своего репозитория в GitHub
-   * создаем рабочий каталог
-      * `mkdir Lesson3`
-      * `mkfile Essey-Summary.md`
-   *  _памятка:_
-         > * ##### mkdir "dirname"  
-         > * ##### mkfile "filename"
-         > * ##### rm -d "dirname"
-         > * ##### rm "filename" 
-   * открываем его в VSCode 
-   * инициализируем git для этого каталога
-      * `git init`
-   * "привяываем свои "идентификаторы"
-      * `$ git config --global user.name "Rafael Rezyapov"`
-      * `$ git config --global user.email Rezograf@gmail.com` 
-   * готовим дальше
-   * `git status`
-      * `git add Essey-Summary.md` (или `git add .`)
-      * `git commit -m "Initialisation commit"` 
-2. твой первый пуш
-3. твой первый форк
-3. pull request
-
- </p>
+<h1>Урок 3. Углубляемся в контроль версий
+</h1>
+<h2>Цель: научиться работать с совместными проектами, с размещением репозитория на GitHube для обеспечения доступа коллег
+</h2>
+<p class = "quotation">"Сделал commit - можешь позволить себе все,<br>сделал push - можешь позволить себе еще больше ..."<br>-RRA-</p>
 </body>
 </html>
 
-Тренажер Emmet: https://epixx.github.io/emmet/
-Emmet команды: https://docs.emmet.io/cheat-sheet/
-
-https://open-vsx.org/extension/techer/open-in-browser
-https://open-vsx.org/extension/ritwickdey/LiveServer
-
-https://validator.w3.org/#validate_by_input
-
-https://disk.yandex.ru/d/Y7ZkabEUOUvOgg
+<h1>Введение в HTML/CSS</h1>
+<h2>Цель: знакомство с азами Hiper Tex tMarkup Language, Cascading Style Sheets и Java Script</h2>
+<p class = "quotation">"Начал писать короткий и смешной анекдот,<br>а получил длинный скушный роман, полный ошибок. <br> ... но все смеялись"<br>-RRA-</p>
+<div>
+   <header>
+      <ul>
+         <li><a href="https://epixx.github.io/emmet/">Тренажер Emmet</a></li>
+         <li><a href="https://docs.emmet.io/cheat-sheet">Emmet команды</a></li>
+         <li><a href="https://open-vsx.org/extension/techer/open-in-browser">быстрое открытие в браузере</a></li>
+         <li><a href="https://open-vsx.org/extension/ritwickdey/LiveServer">"Живой сервер"</a></li>
+         <li><a href="https://validator.w3.org/#validate_by_input">Валидатор страницы</a></li>
+         <li><a href="https://disk.yandex.ru/d/Y7ZkabEUOUvOgg">домашнее задание</a></li>
+      </ul>
+   </header>
+   <footer>
+      <hr>
+      <a href="additional.html">Additional второго семинара</a>   <br>
+      <a href="index.html">возврат на главную страницу</a>
+   </footer>
+</div>
+<pre>
+   df.info()
+   ```
+   class 'pandas.core.frame.DataFrame'>
+   RangeIndex: 3000 entries, 0 to 2999  
+   Data columns (total 9 columns):  
+    #   Column              Non-Null Count  Dtype   
+   ---  ------              --------------  -----    
+    0   longitude           3000 non-null   float64  
+    1   latitude            3000 non-null   float64  
+    2   housing_median_age  3000 non-null   float64
+    3   total_rooms         3000 non-null   float64
+    4   total_bedrooms      3000 non-null   float64
+    5   population          3000 non-null   float64
+    6   households          3000 non-null   float64
+    7   median_income       3000 non-null   float64
+    8   median_house_value  3000 non-null   float64
+   dtypes: float64(9)
+   memory usage: 211.1 KB  
+   ```</pre>
+</body>
+</html>
