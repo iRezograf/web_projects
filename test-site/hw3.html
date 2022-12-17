@@ -8,8 +8,6 @@
     <link href="/styles/style.css" rel="stylesheet">
 </head>
 <body>    
-    <script src="1.js"></script>
-    <script src="2.js"></script>
     <h1>Домашнее задание к третьему семинару</h1>    
     <p>Формат сдачи ДЗ - один архив, со всеми файлами и скриншотами, либо <kbd>pull request</kbd> на github.
     </p>
@@ -21,10 +19,35 @@
         </li>
     </ol>  
     <a href="https://validator.w3.org/#validate_by_input" target="_blank">Валидатор страницы</a><br><br>
-    <button type="submit"  onclick="startHw3_1();">Решение первой задачи</button><br>
-    <button type="submit"  onclick="greeting();">Решение второй задачи</button>
+    <button id="buttontask1" type="button">Решение первой задачи</button><br>
+    <!-- <button id="button-task1" type="submit"  onclick="startHw3_1();">Решение первой задачи</button><br> -->
+    <!-- <button id="button-task2" type="submit"  onclick="greeting();">Решение второй задачи</button> -->
+    <button id="buttontask2" type="button">Решение второй задачи</button>
     <hr>
     <a href="additional3.html">Additional третьего семинара</a> <br>
     <a href="index.html">возврат на главную страницу</a>
+    <p> <b>Замечения:</b></p>
+    <p>
+    Скрипты подключаем либо перед закрывающим тегом body, либо в теге head с атрибутом defer.
+onclick - самый плохой вариант для обработки событий. <br>
+1 - Если вы предполагаете, что пользователь может ввести дробные значения, 
+то лучше и вовсе использовать +prompt или Number.parseFloat(prompt(...)), 
+потому как Number.parseInt в целое число превратит, дробная часть у нас пропадет.
+Переменные именуем с маленькой буквы, с большой в будущем будем писать 
+функции-конструкторы и классы.
+tempByCel надо создать, const проставить перед переменной.
+Не советую вычисления вставлять в строки, особенно вычисления с несколькими действиями. 
+Строка начинает плохо читаться. Лучше заранее посчитать все что нужно, 
+сохранить все значения в переменные и после этого уже вставить эти значения из переменных в строку. <br>
+2 - tempByCel надо переименовать и надо создать.
+Отличная работа, Рафаэль, спасибо :)
+</p>
+<script src="1.js"></script>
+<script src="2.js"></script>
+<script>
+buttontask1.addEventListener("click", startHw3_1);
+buttontask2.addEventListener("click", greeting);
+</script>
+
 </body>
 </html>
