@@ -12,6 +12,36 @@ buttontask1.addEventListener('click', () =>
 // }
 
 document.getElementById('buttontask2').addEventListener('click', () =>
-    {const username = prompt("Введите Ваше имя: "); 
-    console.log(`Здравствуйте, ${username}`);}
+    {
+        const username = prompt("Введите Ваше имя: "); 
+    console.log(`Здравствуйте, ${username}`);
+    }
+    );
+
+ document.getElementById('buttontask2').addEventListener('mouseover', ()=>
+    {
+        let target = event.target;
+        target.style.background = 'gray';
+        //alert("нажми меня");
+    }
+    );  
+document.getElementById('buttontask2').addEventListener('mouseout', ()=>
+    {
+    let target = event.target;
+    target.style.background = '';
+    }
+    );
+
+    document.getElementById('buttontask1').addEventListener('mouseover', ()=>
+    {
+        let target = event.target;
+        target.style.background = 'gray';
+        //alert("нажми меня");
+    }
+    );  
+document.getElementById('buttontask1').addEventListener('mouseout', ()=>
+    {
+    let target = event.target;
+    target.style.background = '';
+    }
     );
