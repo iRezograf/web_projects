@@ -1,0 +1,71 @@
+
+
+
+2.
+
+Примечание:
+
+Квадратные скобки при указании диапазона, означают "включительно", а круглые "не включительно", то есть диапазон (7, 9] означает "от 7, где 7 не попадает в данный диапазон, до 9 включительно". Такой синтаксис нельзя использовать в sql, вам нужно найти решение, как такое условие можно записать в sql по-другому.
+
+Для проверок работы своего скрипта можете использовать свою базу данных, либо используйте сайт: https://onecompiler.com/mysql
+
+АдишинаЛ
+Установка php и базы данных:
+
+Для пользователей Mac:
+
+xampp: https://xampp-for-mac-os-x.ru.uptodown.com/mac
+
+по установке xampp, лучше посмотреть любое, не старое, видео: https://www.youtube.com/results?search_query=%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0+xampp+%D0%BD%D0%B0+mac
+
+Для пользователей Windows:
+
+open server: https://ospanel.io/
+
+по установке open server, лучше посмотреть любое, не старое, видео: https://www.youtube.com/results?search_query=%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0+open+server
+
+Font awesome стили с cdn:
+
+https://cdnjs.com/libraries/font-awesome/4.7.0
+
+Font awesome, сайт с документацией:
+
+https://fontawesome.com/v4/
+
+Документация по php:
+
+https://www.php.net/manual/ru/
+
+Онлайн-песочница php:
+
+https://www.w3schools.com/php/phptryit.asp?filename=tryphp_compiler
+
+Онлайн-песочница mysql:
+
+https://onecompiler.com/mysql
+
+
+      [
+        'workname' => 'Billing Migration',
+        'workdate' => 'November 2005',
+        'workdiscription' => 'There''s works for ensuring biiling migration on new servers in safed networks'
+      ],
+      [
+        'workname' => 'Purchase on Site',
+        'workdate' => 'January 2012',
+        'workdiscription' => 'Start procedure web-purchasing on sites: EЭTП, Fabricant'
+      ],
+      [
+        'workname' => 'GeekBrance',
+        'workdate' => 'September 2022',
+        'workdiscription' => 'Starting education in GekkBrain web-course. Spetialisation: QA, Java'
+      ]
+
+104: 
+        <!-- <h5 class="w3-opacity"><b><?php =$skills[$workname] ?></b></h5> -->
+        <!-- class="w3-tag w3-teal w3-round" выделение зеленым цветом -->
+
+<?php for ($i = 0; $i < count($skills); $i++) { ?>  
+      <?php}?>
+
+

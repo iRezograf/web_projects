@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Инсталляция фонтов -->
+   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Russo+One&display=swap" rel="stylesheet">
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Russo+One&display=swap');
+   </style>
+
+    <title>ДЗ 4</title>
+    <link href="../styles/style.css" rel="stylesheet">
+    <script src="../scripts/main4.js" defer></script>
+</head>
+<body>    
+    <h1>Домашнее задание к четвертому семинару</h1> 
+    <p>Формат сдачи ДЗ - один архив, со всеми файлами и скриншотами, либо pull request на github.
+    </p>
+    <ol>
+        <li>На основе верстки из  <a href="https://disk.yandex.ru/d/H9_wDMSChowFVg" target="_blank">html-документа</a> (можно отсюда скопировать: <kbd>https://pastebin.com/H4rsjsNa</kbd>), необходимо создать php-файл с названием index.php и вставить в этот сайт все что есть в html-документе.
+        <p>Необходимо создать массив в самом верху php-файла, в котором будет описываться опыт работы (правая верхняя часть сайта). Необходимо вставить из массива данные на странице, а именно, название работ, дату и описание для каждой работы.</p> 
+        <p>Если хотите усложнить себе задание, то можете попробовать вывести с помощью цикла эти данные.</p>
+        </li>   
+        <div>
+            <header>Примечания
+                <ol>
+                    <li>файлы <kbd>.php</kbd> не стоит пробовать открывать как обычные html-файлы в браузере, браузеры не умеют выполнять php-код, для этого нужен интерпретатор ( <a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_compiler">специальная программа</a>,  которая разбирает и выполняет код), если вы его не устанавливали себе на компьютер, то можете воспользоваться сайтом</li>
+                    <li>в песочнице php, <a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_compiler">на сайте</a>, есть ограничение по количеству символов/строк, в случае если превысить лимит, то будет сгенерирован, в результате, пустой лист.</li>
+                    <li>задание сложное, поэтому : <a href="https://youtu.be/8EByZ4DgNs0">есть его решение</a>, решение смотреть советую только если столкнулись с проблемами, которые непонятно как решать. Также, не забывайте, что можно задать вопрос в телеграм.</li>
+                </ol>
+            </header>
+            <footer>
+                <p></p>
+            </footer>
+        </div>
+
+        <li> Создать файл <kbd>my.sql</kbd>, в котором должна создаваться таблица с информацией об одногруппниках.<br>
+        В таблице должно быть четыре поля: id, name, age, address.<br>
+        Все поля в таблице обязательны для заполнения.<br>           
+        Необходимо добавить 5-10 одногруппников в данную таблицу.<br>
+        Необходимо написать запрос на получение имен всех одногруппников (только имен, без всего остального), которые живут в Москве и их возраст находится в диапазоне [18, 30) лет.
+        </li>
+    </ol>  
+    <p><strong>решения</strong>:</p>
+    <!-- <button id="buttontask3" type="button">Решение первой задачи</button><br> -->
+    <form id="buttontask3" action="http://localhost/web_projects/test-site/resume.php" target="_blank">
+        <button>Решение первой задачи</button>
+    </form>
+    <p><strong>комментии к решению первой задачи</strong>:</p>
+    <p>"песочницей" не пользовался: установил на компе XAMPP 8.1.12-0.  <br>Кроме того  установил Brew и затем PHP, но PHP для Venture Depricated. Похоже Apple переориентировался на Perl. Или я что-то еще не понял. <br> "Нативный" Apachi не "поднял", потому что долго разбираться со структурой каталогов и конфиг файлом. Это сильно за рамками ДЗ</p>
+    <form id="buttontask4" action="http://localhost/web_projects/test-site/classmates.php" target="_blank">
+        <button>Решение второй задачи</button>
+    </form>
+    <!-- <a href="task1.php">Решение первой задачи</a>
+    <a href="task2.php">Решение второй задачи</a> -->
+     <hr>
+    <a href="additional4.html">Additional четвертого семинара</a> <br>
+    <a href="index.html">возврат на главную страницу</a>
+    <hr>
+    <!-- <p> <b>Замечения:</b></p>
+    <p class = "quotation">"...хочешь запoмнить что-то - обсуди!"<br> -RRA-</p>-->
+</body>
+</html>
+<pre>
+    памятка об иснталляции <kbd>Brew</kbd> и <kbd>PHP</kbd> на macOs Ventura 13.1 (22C65):
+    cd /private/etc/apache2
+    sudo apacectl start
+    apache2 % apachectl status 
+    Go to http://localhost:80/server-status in the web browser of your choice.
+    Note that mod_status must be enabled for this to work.
+    
+    The default interactive shell is now zsh.
+    To update your account to use zsh, please run <kbd>`chsh -s /bin/zsh`</kbd>.
+    
+    Install Brew
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    
+    The default interactive shell is now zsh.
+    To update your account to use zsh, please run `chsh -s /bin/zsh`.
+    
+    Осталось сделать:
+    Finally, check DirectoryIndex includes index.php
+        DirectoryIndex index.php index.html
+    
+    The php.ini and php-fpm.ini file can be found in:
+        /opt/homebrew/etc/php/8.2/
+    
+    To restart php after an upgrade:
+      brew services restart php
+    Or, if you don't want/need a background service you can just run:
+      /opt/homebrew/opt/php/sbin/php-fpm --nodaemonize
+</pre>

@@ -1,6 +1,7 @@
 /* p {
         font: 20px/24px bold italic large serif;
       } */
+
 html {
   background-color: #00539f;
   
@@ -11,12 +12,15 @@ img {
 h1 {
   margin: 0,0,0,0 ;
   text-align: center;
-  font: 28px RussoOne-Regular;
+  font-family: 'Russo One', sans-serif;
+  /* font: 28px RussoOne-Regular; */
 }
 h2 {
   margin: 0,0,0,0;
   text-align: right;
-  font: 20px Nunito;
+  /* font: 20px Nunito; */
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 body {
@@ -28,7 +32,8 @@ body {
   padding: 0 200px 100px 200px;
   border: 5px solid black;
   text-align: justify;
-  font: 16px Nunito;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Nunito Sans', sans-serif;
 }
 .li-marker {
   /* list-style-type: circle;
@@ -45,7 +50,8 @@ body {
 code {
   background: rgb(171, 176, 175);
   padding: 0.125rem 0.25rem;
-  font-family: Nunito;
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif; */
     /* width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; */
@@ -54,7 +60,8 @@ code {
 ss {
   background: rgb(218, 102, 7);
   padding: 0.125rem 0.25rem;
-  font-family: Nunito;
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif; */
     /* width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; */
