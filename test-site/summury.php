@@ -1,36 +1,35 @@
 <?php 
   $skills = [
-      [
-        'workname' => '"Millenium Problem"',
-        'workdate1' => 'January 1999',
-        'workdate2' => 'Desember 1999',
-        'workdiscription' => 'Launching new Oracle Server for guaranting exclude problems was knowned as "Millenium Problem" in Enterprise'
-      ],
-      [
-        'workname' => 'DB Aeroflot',
-        'workdate1' => 'Mart 2001',
-        'workdate2' => 'April 2001',
-        'workdiscription' => 'Developing project DB and test application for Aeroflot HR department'
-      ],
-      [
-        'workname' => 'Billing Migration',
-        'workdate1' => 'October 2005',
-        'workdate2' => 'November 2005',
-        'workdiscription' => "There's works for ensuring biiling migration on new servers in safed networks"
-      ],
-
-      [
-        'workname' => 'Purchase on Site',
-        'workdate1' => 'August 2011',
-        'workdate2' => 'January 2012',
-        'workdiscription' => 'Start procedure web-purchasing on sites: EЭTП, Fabricant'
-      ],
-      [
-        'workname' => 'GeekBrance',
-        'workdate1' => 'September 2022',
-        'workdate2' => 'Current',
-        'workdiscription' => 'Starting education in GekkBrain web-course. Spetialisation: QA, Java'
-      ]
+    [
+      'workname' => 'GeekBrance',
+      'workdate1' => 'September 2022',
+      'workdate2' => 'Current',
+      'workdiscription' => 'Starting education in GekkBrain web-course. Spetialisation: QA, Java'
+    ],
+    [
+      'workname' => 'Purchase on Site',
+      'workdate1' => 'August 2011',
+      'workdate2' => 'January 2012',
+      'workdiscription' => 'Start procedure web-purchasing on sites: EЭTП, Fabricant'
+    ],
+    [
+      'workname' => 'Billing Migration',
+      'workdate1' => 'October 2005',
+      'workdate2' => 'November 2005',
+      'workdiscription' => "There's works for ensuring biiling migration on new servers in safed networks"
+    ],
+    [
+      'workname' => 'DB Aeroflot',
+      'workdate1' => 'Mart 2001',
+      'workdate2' => 'April 2001',
+      'workdiscription' => 'Developing project DB and test application for Aeroflot HR department'
+    ],
+    [
+      'workname' => '"Millenium Problem"',
+      'workdate1' => 'January 1999',
+      'workdate2' => 'Desember 1999',
+      'workdiscription' => 'Launching new Oracle Server for guaranting exclude problems was knowned as "Millenium Problem" in Enterprise'
+    ]
   ];
 ?>
 

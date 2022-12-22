@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Инсталляция фонтов -->
+   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Russo+One&display=swap" rel="stylesheet">
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Russo+One&display=swap');
+   </style>
+
+   <title>My.SQL</title>
+   <link href="../styles/style.css" rel="stylesheet">
+</head>
+<body>
+   <h3>
+      <pre>
+      CREATE TABLE  classmates (
+         classmatesId INTEGER PRIMARY KEY,
+         name TEXT NULL,
+         age INTEGER NOT NULL,
+         address TEXT NOT NULL
+      );
+       
+       -- insert
+       INSERT INTO classmates VALUES (0001, 'Анастасия Сдобникова',  22, 'г. Москва');
+       INSERT INTO classmates VALUES (0002, 'Вера Лобова', 25, 'Екатеринбург');
+       INSERT INTO classmates VALUES (0003, 'Александра Маркова', 29, 'Екатеринбург');
+       INSERT INTO classmates VALUES (0004, 'Дмитрий Шаталов', 45, 'Москва');
+       INSERT INTO classmates VALUES (0005, 'Алексей Кобзев', 32, 'Екатеринбург');
+       INSERT INTO classmates VALUES (0006, 'Вадим Шаповалов', 36, 'Москва');
+       INSERT INTO classmates VALUES (0007, 'Юлия Ржевская', 17, 'Москва');
+       INSERT INTO classmates VALUES (0008, 'Александр Бородулин', 19, 'Москва');
+       INSERT INTO classmates VALUES (0009, 'Екатерина Чусова', 23, 'Санкт-Петербург');
+       INSERT INTO classmates VALUES (0010, 'Никита Кузнецов', 22, 'Санкт-Петербург');
+       
+       -- fetch 
+       SELECT name FROM classmates WHERE address = 'Москва' AND age < 30 AND age > 18;
+      </pre> 
+   </h3>
+   <hr>
+   <a href="hw2.html">перейти к ДЗ 2</a> 
+   <br>
+   <a href="hw3.html">перейти к ДЗ 3</a>
+   <br>
+   <a href="hw4.html">перейти к ДЗ 4</a>  
+</body>
+
+</html>
+
+
