@@ -2,32 +2,32 @@
   $skills = [
     [
       'workname' => 'GeekBrance',
-      'workdate1' => 'September 2022',
-      'workdate2' => 'Current',
+      'StartDate' => 'September 2022',
+      'EndDate' => 'Current',
       'workdiscription' => 'Starting education in GekkBrain web-course. Spetialisation: QA, Java'
     ],
     [
       'workname' => 'Purchase on Site',
-      'workdate1' => 'August 2011',
-      'workdate2' => 'January 2012',
+      'StartDate' => 'August 2011',
+      'EndDate' => 'January 2012',
       'workdiscription' => 'Start procedure web-purchasing on sites: EЭTП, Fabricant'
     ],
     [
       'workname' => 'Billing Migration',
-      'workdate1' => 'October 2005',
-      'workdate2' => 'November 2005',
+      'StartDate' => 'October 2005',
+      'EndDate' => 'November 2005',
       'workdiscription' => "There's works for ensuring biiling migration on new servers in safed networks"
     ],
     [
       'workname' => 'DB Aeroflot',
-      'workdate1' => 'Mart 2001',
-      'workdate2' => 'April 2001',
+      'StartDate' => 'Mart 2001',
+      'EndDate' => 'April 2001',
       'workdiscription' => 'Developing project DB and test application for Aeroflot HR department'
     ],
     [
       'workname' => '"Millenium Problem"',
-      'workdate1' => 'January 1999',
-      'workdate2' => 'Desember 1999',
+      'StartDate' => 'January 1999',
+      'EndDate' => 'Desember 1999',
       'workdiscription' => 'Launching new Oracle Server for guaranting exclude problems was knowned as "Millenium Problem" in Enterprise'
     ]
   ];
@@ -119,12 +119,10 @@
     <!-- Works Expiriens -->
     <div class="w3-container w3-card w3-white w3-margin-bottom">   
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
-        <?php for ($i=0; $i<count($skills);$i++) { ?>
-        <p></p>
+        <?php for ($i = 0; $i < 5; $i += 1) { ?>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b><?=$skills[$i]["workname"];?></b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?=$skills[$i]["workdate1"];?> - <span><?=$skills[$i]["workdate2"];?></span></h6>
-          <p><?=$skills[$i]["workdiscription"];?></p>
+          <h5 class="w3-opacity"><b><?=$skills[$i]['workname'];?></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?=$skills[$i]['StartDate'];?> - <span class="w3-tag w3-teal w3-round"><?=$skills[$i]['EndDate'];?></span></h6><h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?=$skills[$i]['StartDate']; ?> - <span><?=$skills[$i]['EndDate'];?></span></h6><p><?=$skills[$i]['workdiscription'];?></p>
           <hr>
         </div>
         <?php }; ?>

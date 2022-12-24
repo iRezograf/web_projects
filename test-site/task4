@@ -69,3 +69,107 @@ https://onecompiler.com/mysql
       <?php}?>
 
 
+
+
+PASTEBIN
+API
+TOOLS
+FAQ
+paste
+  
+LOGIN SIGN UP
+Advertisement
+SHARE
+TWEET
+Guest User
+Untitled
+A GUEST
+DEC 23RD, 2022
+7
+0
+NEVER
+ADD COMMENT
+Not a member of Pastebin yet? Sign Up, it unlocks many cool features!
+text 1.38 KB | None | 0 0
+raw download clone embed print report
+```index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="pagintaion_btn" data-page="1">Страница 1</button>
+  <button class="pagintaion_btn" data-page="2">Страница 2</button>
+  <div id="app"></div>
+  <script src="main.js"></script>
+</body>
+</html>
+```
+ 
+ 
+```main.js
+const paginationBtnEls = document.querySelectorAll('.pagintaion_btn');
+ 
+for (let i = 0; i < paginationBtnEls.length; i++) {
+  paginationBtnEls[i].addEventListener('click', async function (event) {
+    const users = await getUsers(event.target.dataset.page);
+    renderUsers(users);
+  });
+}
+ 
+function renderUsers(users) {
+  let content = "";
+  for (let i = 0; i < users.length; i++) {
+    content = content + `
+    <div>
+      <img src="${users[i].avatar}" alt="${users[i].first_name} ${users[i].last_name}">
+      <p>${users[i].first_name} ${users[i].last_name}</p>
+    </div>
+    `;
+  }
+ 
+  document.querySelector('#app').innerHTML = content;
+}
+ 
+async function getUsers(page) {
+  const response = await fetch(`https://reqres.in/api/users?page=${page}`);
+  const json = await response.json();
+  return json.data;
+}
+ 
+// me ------> server (nginx) <-------> php <-------> db
+```
+Advertisement
+Add Comment
+Please, Sign In to add comment
+Advertisement
+Public Pastes
+WilliamB504's Data
+JSON | 33 sec ago | 14.47 KB
+id2
+C++ | 1 min ago | 0.52 KB
+Untitled
+MySQL | 18 min ago | 0.06 KB
+Struct Definition of .mua Header
+C | 1 hour ago | 0.91 KB
+Advent of Code 2022 Day 23
+Python | 2 hours ago | 2.27 KB
+Afroboy416's Data
+JSON | 2 hours ago | 13.86 KB
+Book Store program using Classes and Exceptio...
+C++ | 2 hours ago | 1.53 KB
+Untitled
+PostgreSQL | 2 hours ago | 0.63 KB
+Advertisement
+create new paste  /  syntax languages  /  archive  /  faq  /  tools  /  night mode  /  api  /  scraping api  /  news  /  pro 
+privacy statement  /  cookies policy  /  terms of serviceupdated  /  security disclosure  /  dmca  /  report abuse  /  contact
+
+By using Pastebin.com you agree to our cookies policy to enhance your experience. 
+Site design & logo © 2022 Pastebin
+We use cookies for various purposes including analytics. By continuing to use Pastebin, you agree to our use of cookies as described in the Cookies Policy.  OK, I Understand
+ Not a member of Pastebin yet?
+Sign Up, it unlocks many cool features!  

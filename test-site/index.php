@@ -43,6 +43,7 @@
     <a href="hw3.html">перейти к ДЗ 3</a>
     <br>
     <a href="hw4.html">перейти к ДЗ 4</a>
+    <?php echo phpinfo() ?>
 </html>
 
 
