@@ -11,8 +11,7 @@
    </style>
 
    <title>МойКонспект</title>
-   <link href="../styles/style.css" rel="stylesheet">
-
+   <link href= "../styles/style.css" rel="stylesheet">
 </head>
 <body> 
     <h1>Введение в HTML/CSS</h1>
@@ -43,6 +42,8 @@
     <a href="hw3.html">перейти к ДЗ 3</a>
     <br>
     <a href="hw4.html">перейти к ДЗ 4</a>
+
+    <!-- наличие или отсутствие этой строки влияет на то, что будет ли прочитан Style -->
     <?php echo phpinfo() ?>
 </html>
 
